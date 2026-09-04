@@ -1,4 +1,4 @@
-name: Convert PWA to Release AAB
+name: Convert PWA to Release AAB 
 
 on:
   push:
