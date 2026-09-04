@@ -1,1 +1,0 @@
-# Ruya-tips-apk
