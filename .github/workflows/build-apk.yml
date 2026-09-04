@@ -65,11 +65,11 @@ jobs:
 
       - name: Set Dynamic Version Code
         env:
-          VERSION_OFFSET: 10 
+          VERSION_OFFSET: 20 
         run: |
           NEW_VERSION_CODE=$((${{ github.run_number }} + $VERSION_OFFSET))
-          sed -i -E "s/versionCode [0-9]+/versionCode $NEW_VERSION_CODE/" android/app/build.gradle
-          sed -i -E "s/versionName \"[^\"]+\"/versionName \"1.0.$NEW_VERSION_CODE\"/" android/app/build.gradle
+          sed -i -E "s/(versionCode[[:space:]]+)[0-9]+/\1$NEW_VERSION_CODE/" android/app/build.gradle
+          sed -i -E "s/(versionName[[:space:]]+)\"[^\"]+\"/\1\"1.0.$NEW_VERSION_CODE\"/" android/app/build.gradle
 
       - name: Fix Android Hardware Back Button
         run: |
