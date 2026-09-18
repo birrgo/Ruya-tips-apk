@@ -10,7 +10,7 @@ env:
   APP_NAME: "Ruya Tips"
   PACKAGE_NAME: "com.ruyatips.app"
   # Replace with the actual AdMob App ID for Ruya Tips if different
-  ADMOB_APP_ID: "ca-app-pub-1118823918279022~8410967279" 
+  ADMOB_APP_ID: "ca-app-pub-1118823918279022~5433364427" 
 
 jobs:
   build:
